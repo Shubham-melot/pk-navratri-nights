@@ -1,6 +1,177 @@
-*, *::before, *::after {
+:root {
+  --color-primary: #0c042d;
+}
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+::backdrop {
+  background-color: #0c042d;
+  opacity: 0.75;
+}
+
+body {
+  min-height: 400vh;
+  font-size: 3vw;
+  color: #fff;
+  background: var(--color-primary) url('/assets/images/bg.jpg') center/100% 100% no-repeat;
+  position: relative;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+header img {
+  width: 100%;
+}
+
+.date-btn {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+}
+
+main {
+  margin-top: 16px;
+}
+
+main,
+.rewards-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.rewards-tab .tab-header {
+  background: url('/assets/images/Talent user btn bg.png') center/100% 100% no-repeat;
+  height: 45px;
+  width: 70%;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab-content {
+  display: none;
+  padding-inline: 16px;
+  width: 100%;
+}
+
+.tab-content.active {
+  display: initial;
+}
+
+.tab-button {
+  width: 52%;
+  height: 110%;
+  transform: scale(1.2);
+  margin-top: -1px;
+}
+
+.tab-button.user.active {
+  background: url('/assets/images/User btn.png') center/100% 100% no-repeat;
+}
+
+.tab-button.talent.active {
+  background: url('/assets/images/Talent btn.png') center/100% 100% no-repeat;
+}
+
+
+.rounds-tab {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.rounds-tab .tab-header {
+  padding-inline: 24px;
+  background: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.rounds-tab .tab-button {
+  width: 30%;
+  height: 40px;
+}
+
+.tab-button.round-1 {
+  background: url('/assets/images/Round 1 unselect btn.png') center/100% 100% no-repeat;
+}
+
+.tab-button.round-2 {
+  background: url('/assets/images/Round 2 unselect btn.png') center/100% 100% no-repeat;
+}
+
+.tab-button.round-1.active {
+  background: url('/assets/images/Round 1 select btn.png') center/100% 100% no-repeat;
+}
+
+.tab-button.round-2.active {
+  background: url('/assets/images/Round 2 select btn.png') center/100% 100% no-repeat;
+}
+
+.guide-btn {
+  height: 40px;
+  position: fixed;
+  right: 0;
+  top: 30%;
+  z-index: 20;
+}
+.guide-btn img {
+  height: 100%;
+}
+
+.modal {
+  border: none;
+  position: fixed;
+  margin: 0 auto;
+  margin-top: 10%;
+  width: 100%;
+  background-color: transparent;
+}
+.modal-container, .reward-container {
+  width: 100%;
+  margin-top: 10px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('/assets/images/Leaderboard and guide bg.png') center/100% 100% no-repeat;  
+}
+.modal-container > img, .reward-container > img {
+  width: 60%;
+  transform: translateY(-14%);
+}
+
+.reward-container {
+  display: none;
+  min-height: auto;
+  height: 200px;
+  background: url('/assets/images/Rewards bg.png') center/100% 100% no-repeat;  
+  margin-bottom: 24px;
+}
+.reward-container.active {
+  display: flex;
+}
