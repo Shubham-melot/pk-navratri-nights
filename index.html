@@ -1,90 +1,209 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PK Navratri Nights</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PK Navratri Nights</title>
-</head>
+  <body>
+    <!--#region Header -->
+    <header>
+      <img src="/assets/images/Header.gif" alt="Header" />
+      <button type="button" class="date-btn" title="Date">
+        <img src="/assets/images/Date.png" alt="Date" />
+      </button>
+    </header>
+    <!--endregion Header -->
 
-<body>
-  <!--#region Header -->
-  <header>
-    <img src="/assets/images/Header.gif" alt="Header">
-    <button type="button" class="date-btn" title="Date">
-      <img src="/assets/images/Date.png" alt="Date">
-    </button>
-  </header>
-  <!--endregion Header -->
+    <!-- #region Main Section -->
+    <main>
+      <!-- #region Guide Modal -->
+      <button
+        data-modal="guide"
+        class="modal-btn guide-btn"
+        type="button"
+        id="guideBtn"
+        title="Guide"
+      >
+        <img src="/assets/images/Guide-btn.png" alt="Guide" />
+      </button>
 
-  <!-- #region Main Section -->
-  <main>
+      <!-- #endregion Guide Modal -->
 
-    <!-- #region Guide Modal -->
-    <button data-modal="guide" class="modal-btn guide-btn" type="button" id="guideBtn" title="Guide">
-      <img src="/assets/images/Guide-btn.png" alt="Guide">
-    </button>
+      <!-- #region Rewards Tab -->
+      <section class="tab rewards-tab" id="rewardsTab">
+        <div class="tab-header">
+          <button
+            type="button"
+            data-tab="user"
+            class="tab-button user active"
+            title="User"
+          />
+          <button
+            type="button"
+            data-tab="talent"
+            class="tab-button talent"
+            title="Talent"
+          />
+        </div>
 
-    <!-- #endregion Guide Modal -->
+        <div data-tab="user" class="tab-content user active">
+          <div class="tab rounds-tab">
+            <div class="tab-header">
+              <button
+                type="button"
+                data-tab="round-1"
+                class="tab-button round-1"
+                title="Round 1"
+              />
+              <button
+                type="button"
+                data-tab="round-2"
+                class="tab-button round-2 active"
+                title="Round 2"
+              />
+            </div>
 
-    <!-- #region Rewards Tab -->
-    <section class="tab rewards-tab" id="rewardsTab">
-      <div class="tab-header">
-        <button type="button" data-tab="user" class="tab-button user active" title="User" />
-        <button type="button" data-tab="talent" class="tab-button talent" title="Talent" />
-      </div>
+            <div data-tab="round-1" class="tab-content">Round 1</div>
+            <div data-tab="round-2" class="tab-content reward-container active">
+              <img
+                src="/assets/images/Rewards tag.png"
+                alt="Guide tag"
+                role="presentation"
+              />
+            </div>
 
-      <div data-tab="user" class="tab-content user active">
-        <div class="tab rounds-tab">
-          <div class="tab-header">
-            <button type="button" data-tab="round-1" class="tab-button round-1" title="Round 1" />
-            <button type="button" data-tab="round-2" class="tab-button round-2 active" title="Round 2" />
-          </div>
-
-          <div data-tab="round-1" class="tab-content">Round 1</div>
-          <div data-tab="round-2" class="tab-content reward-container active">
-            <img src="/assets/images/Rewards tag.png" alt="Guide tag" role="presentation">
-          </div>
-
-          <div class="tab-header">
-            <button type="button" data-tab="round-1" class="tab-button round-1" title="Round 1" />
-            <button type="button" data-tab="round-2" class="tab-button round-2 active" title="Round 2" />
+            <div class="tab-header">
+              <button
+                type="button"
+                data-tab="round-1"
+                class="tab-button round-1"
+                title="Round 1"
+              />
+              <button
+                type="button"
+                data-tab="round-2"
+                class="tab-button round-2 active"
+                title="Round 2"
+              />
+            </div>
           </div>
         </div>
+        <div data-tab="talent" class="tab-content talent">Talent content</div>
+      </section>
+      <!-- #endregion Rewards Tab -->
+
+      <!-- #region Schedule Section -->
+      <section class="tab schedule-tab" id="scheduleTab">
+        <div class="tab-header">
+          <button
+            data-tab="garba"
+            type="button"
+            class="tab-button garba active"
+            title="Garba"
+          />
+          <button
+            data-tab="singing"
+            type="button"
+            class="tab-button singing"
+            title="Signing"
+          />
+          <button
+            data-tab="fashion"
+            type="button"
+            class="tab-button fashion"
+            title="Fashion"
+          />
+        </div>
+
+        <div data-tab="garba" class="tab-content garba-container active">
+          <img
+            class="tag schedule"
+            src="/assets/images/Schedule tag.png"
+            alt="Schedule tag"
+            role="presentation"
+          />
+          <div class="table">
+            <div class="table-header">
+              <div>
+                <span>Date</span>
+                <span>Player 1</span>
+              </div>
+              <img
+                class="vs-image"
+                src="/assets/images/Vs.png"
+                alt="Vs"
+                role="presentation"
+              />
+              <div>
+                <span>Player 2</span>
+                <span>Time</span>
+              </div>
+            </div>
+
+            <template id="table-desc">
+              <div class="table-desc">
+                <div>
+                  <span>Date</span>
+                  <div>
+                    <span class="player-1-name">Talent Name</span>
+                    <br />
+                    <span class="player-1-id">ID: 00000000</span>
+                  </div>
+                </div>
+                <img
+                  class="vs-image"
+                  src="/assets/images/Vs.png"
+                  alt="Vs"
+                  role="presentation"
+                />
+                <div>
+                  <div>
+                    <span class="player-2-name">Talent Name</span>
+                    <br />
+                    <span class="player-2-id">ID: 00000000</span>
+                  </div>
+                  <span>Time</span>
+                </div>
+              </div>
+            </template>
+          </div>
+        </div>
+
+        <div data-tab="singing" class="tab-content singing-container">
+          Singing Schedule Tab
+        </div>
+        <div data-tab="fashion" class="tab-content fashion-container">
+          Fashion Schedule Tab
+        </div>
+      </section>
+      <!-- #endregion Schedule Section -->
+    </main>
+    <!-- #endregion Main Section -->
+
+    <!-- #region Footer -->
+    <footer></footer>
+    <!-- #endregion Footer -->
+
+    <!-- #region Modals -->
+
+    <dialog data-modal="guide" class="modal" id="guide-modal">
+      <div class="guide-container modal-container">
+        <img
+          src="/assets/images/Guide tag.png"
+          alt="Guide tag"
+          role="presentation"
+        />
+        <form method="dialog">
+          <button autofocus>Close</button>
+        </form>
       </div>
-      <div data-tab="talent" class="tab-content talent">Talent content</div>
-    </section>
-    <!-- #endregion Rewards Tab -->
-    
-    <!-- #region Schedule Section -->
-    <section class="tab schedule-tab" id="scheduleTab">
+    </dialog>
 
-    </section>
-    <!-- #endregion Schedule Section -->
+    <!-- #endregion -->
 
-  </main>
-  <!-- #endregion Main Section -->
-
-  <!-- #region Footer -->
-  <footer></footer>
-  <!-- #endregion Footer -->
-
-  <!-- #region Modals -->
-
-
-  <dialog data-modal="guide" class="modal" id="guide-modal">
-    <div class="guide-container modal-container">
-      <img src="/assets/images/Guide tag.png" alt="Guide tag" role="presentation">
-      <form method="dialog">
-        <button autofocus>Close</button>
-      </form>
-    </div>
-  </dialog>
-
-  <!-- #endregion -->
-
-  <script type="module" src="/main.js"></script>
-</body>
-
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
