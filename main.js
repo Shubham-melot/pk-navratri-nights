@@ -62,7 +62,6 @@ for (let i = 0; i < players.length / 2; i++) {
     })
 }
 const garbaScheduleTable = document.querySelector('.garba-container .table')
-console.log(garbaScheduleTable)
 const scheduleTableItemTemplate = document.querySelector('#table-desc')
 scheduleData.forEach(schedule => {
     const scheduleTableItem = scheduleTableItemTemplate.content.cloneNode(true);
