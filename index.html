@@ -70,9 +70,27 @@
             <div data-tab="round-2" class="tab-content reward-container active">
               <img
                 src="/assets/images/Rewards tag.png"
-                alt="Guide tag"
+                alt="Rewards tag"
                 role="presentation"
               />
+              <div class="slides reward-slides-container">
+                <div class="reward-slides">
+                  <div class="reward-slide"></div>
+                  <div class="reward-slide"></div>
+                  <div class="reward-slide"></div>
+                </div>
+                <div class="slider-buttons">
+                  <button class="slider-button active" />
+                  <button class="slider-button" />
+                  <button class="slider-button" />
+                  <button class="slider-button" />
+                  <button class="slider-button" />
+                </div>
+                <div class="info">
+                  7 days Solar Entrance + 15 days GLORY profile frame + webpage
+                  mention
+                </div>
+              </div>
             </div>
 
             <div class="tab-header">
@@ -198,7 +216,8 @@
           />
         </div>
 
-        <div data-tab="user" class="tab-content user active">
+        <!-- #region User tab -->
+        <div data-tab="user" class="tab tab-content user active">
           <div class="round">
             <button
               type="button"
@@ -213,6 +232,7 @@
               title="Round 2"
             />
           </div>
+
           <div class="category-tab-header tab-header">
             <button
               data-tab="garba"
@@ -245,13 +265,13 @@
               role="presentation"
             />
             <div class="topper-container">
-              <div class="top top-2">
+              <div class="top top-1">
                 <div class="avatar"></div>
                 <div class="info">
                   <span class="name">Name</span>
                   <span class="id">ID</span>
-                  <span class="beans">
-                    000,000,00
+                  <span>
+                    <span class="beans"></span>
                     <img
                       class="bean-img"
                       src="/assets/images/Beans icon.png"
@@ -262,13 +282,13 @@
                 </div>
               </div>
 
-              <div class="top top-1">
+              <div class="top top-2">
                 <div class="avatar"></div>
                 <div class="info">
                   <span class="name">Name</span>
                   <span class="id">ID</span>
-                  <span class="beans">
-                    000,000,00
+                  <span>
+                    <span class="beans"></span>
                     <img
                       class="bean-img"
                       src="/assets/images/Beans icon.png"
@@ -284,8 +304,8 @@
                 <div class="info">
                   <span class="name">Name</span>
                   <span class="id">ID</span>
-                  <span class="beans">
-                    000,000,00
+                  <span>
+                    <span class="beans"></span>
                     <img
                       class="bean-img"
                       src="/assets/images/Beans icon.png"
@@ -298,59 +318,25 @@
             </div>
 
             <div class="winner-container">
-              <div class="winner-strip">
-                <span class="number">4.</span>
-                <div class="avatar"></div>
-                <div class="info">
-                  <span class="name">Name</span>
-                  <span class="id">ID</span>
+              <template id="winner-strip">
+                <div class="winner-strip">
+                  <span class="position"></span>
+                  <div class="avatar"></div>
+                  <div class="info">
+                    <span class="name"></span>
+                    <span class="id"></span>
+                  </div>
+                  <span>
+                    <span class="beans"></span>
+                    <img
+                      class="bean-img"
+                      src="/assets/images/Beans icon.png"
+                      alt="beans"
+                      role="presentation"
+                    />
+                  </span>
                 </div>
-                <span>
-                  000,000,00
-                  <img
-                    class="bean-img"
-                    src="/assets/images/Beans icon.png"
-                    alt="beans"
-                    role="presentation"
-                  />
-                </span>
-              </div>
-              
-              <div class="winner-strip">
-                <span class="number">4.</span>
-                <div class="avatar"></div>
-                <div class="info">
-                  <span class="name">Name</span>
-                  <span class="id">ID</span>
-                </div>
-                <span>
-                  000,000,00
-                  <img
-                    class="bean-img"
-                    src="/assets/images/Beans icon.png"
-                    alt="beans"
-                    role="presentation"
-                  />
-                </span>
-              </div>
-              
-              <div class="winner-strip">
-                <span class="number">4.</span>
-                <div class="avatar"></div>
-                <div class="info">
-                  <span class="name">Name</span>
-                  <span class="id">ID</span>
-                </div>
-                <span>
-                  000,000,00
-                  <img
-                    class="bean-img"
-                    src="/assets/images/Beans icon.png"
-                    alt="beans"
-                    role="presentation"
-                  />
-                </span>
-              </div>
+              </template>
             </div>
           </div>
 
@@ -364,14 +350,18 @@
             class="tab-content leaderboard-container fashion-leaderboard-container"
           ></div>
         </div>
+        <!-- #endregion User tab -->
+
+        <!-- #region Talent tab -->
         <div data-tab="talent" class="tab-content talent"></div>
+        <!-- #endregion Talent tab -->
       </section>
       <!-- #endregion Leaderboard Section -->
     </main>
     <!-- #endregion Main Section -->
 
     <!-- #region Footer -->
-    <footer></footer>
+    <footer>All rights reserved by StreamKar</footer>
     <!-- #endregion Footer -->
 
     <!-- #region Modals -->

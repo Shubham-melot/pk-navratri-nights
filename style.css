@@ -1,6 +1,7 @@
 :root {
   --color-primary: #0c042d;
   --color-accent: #ffe658;
+  --color-text: #1e0e00;
 }
 
 *,
@@ -17,7 +18,7 @@
 }
 
 body {
-  min-height: 330vh;
+  min-height: 340vh;
   font-size: 3vw;
   color: #fff;
   background: var(--color-primary) url("/assets/images/bg.jpg") center/100% 100%
@@ -178,6 +179,7 @@ main,
   margin-top: 40px;
   display: none;
   padding-inline: 8px;
+  min-height: auto;
 }
 .leaderboard-container.active {
   display: flex;
@@ -193,12 +195,52 @@ main,
 .reward-container {
   display: none;
   min-height: auto;
-  height: 200px;
+  height: 240px;
   background: url("/assets/images/Rewards bg.png") center/100% 100% no-repeat;
   margin-bottom: 24px;
 }
 .reward-container.active {
   display: flex;
+}
+.reward-slides-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.reward-slides {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 10px;
+}
+.reward-slide {
+  --size: 90px;
+  width: var(--size);
+  height: calc(var(--size) + 10px);
+  background: url("/assets/images/Rewards base.png") center/100% 100% no-repeat;
+}
+.slider-buttons {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+}
+.slider-button {
+  --size: 10px;
+  background: url('/assets/images/unselect scroller.png') center/100% 100% no-repeat;
+  height: var(--size);
+  border-radius: var(--size);
+  width: var(--size);
+}
+.slider-button.active {
+  background: url('/assets/images/Select scroller.png') center/100% 100% no-repeat;
+}
+.reward-slides-container .info {
+  font-style: normal;
+  text-align: center;
+  font-size: 4vw;
+  color: var(--color-accent);
 }
 
 .schedule-tab {
@@ -290,8 +332,12 @@ main,
   max-height: 40px;
 }
 
+.garba-leaderboard-container {
+  padding-bottom: 10px;
+}
 .topper-container {
   display: flex;
+  width: 100%;
 }
 .topper-container .top {
   height: 140px;
@@ -306,29 +352,35 @@ main,
 .topper-container .top-2 {
   background: url("/assets/images/Top 2 bg.png") center/100% 100% no-repeat;
   margin-top: 4%;
+  order: 1;
 }
 .topper-container .top-1 {
   background: url("/assets/images/Top 1 bg.png") center/100% 100% no-repeat;
+  order: 2;
 }
 .topper-container .top-3 {
   background: url("/assets/images/Top 3 bg.png") center/100% 100% no-repeat;
   margin-top: 8%;
+  order: 3;
 }
 .avatar {
+  --size: 30px;
   border-radius: 100px;
   background-color: black;
   border: 1px solid var(--color-accent);
-  height: 20px;
-  width: 20px;
+  height: var(--size);
+  width: var(--size);
 }
 .top .avatar {
-  height: 40px;
-  width: 40px;
+  --size: 40px;
   align-self: center;
 }
-.top .info {
+.info {
   display: flex;
   flex-direction: column;
+  font-style: italic;
+  color: var(--color-text);
+  font-weight: 600;
 }
 .bean-img {
   max-height: 10px;
@@ -337,17 +389,33 @@ main,
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 300px;
   align-items: center;
+  overflow-y: scroll;
+  margin-top: 10px;
 }
 .winner-strip {
+  color: var(--color-accent);
   display: flex;
   width: 100%;
-  height: 50px;
+  min-height: 50px;
   align-items: center;
   padding-inline: 14px;
+  padding-bottom: 10px;
   background: url('/assets/images/4th name onwards strip.png') center/100% 100% no-repeat;
   gap: 1em;
 }
 .winner-strip .info {
   flex: 1;
+  color: var(--color-accent);
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  color: var(--color-accent);
+  width: 100%;
+  font-weight: 600;
+  min-height: 50px;
 }
