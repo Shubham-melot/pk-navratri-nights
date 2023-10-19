@@ -21,7 +21,7 @@ body {
   min-height: 340vh;
   font-size: 3vw;
   color: #fff;
-  background: var(--color-primary) url("/assets/images/bg.jpg") center/100% 100%
+  background: var(--color-primary) url("assets/images/bg.jpg") center/100% 100%
     no-repeat;
   position: relative;
 }
@@ -70,7 +70,7 @@ main,
 
 .rewards-tab .tab-header,
 .leaderboard-tab > .tab-header {
-  background: url("/assets/images/Talent user btn bg.png") center/100% 100%
+  background: url("assets/images/Talent user btn bg.png") center/100% 100%
     no-repeat;
   height: 45px;
   width: 70%;
@@ -96,11 +96,11 @@ main,
 }
 
 .tab-button.user.active {
-  background: url("/assets/images/User btn.png") center/100% 100% no-repeat;
+  background: url("assets/images/User btn.png") center/100% 100% no-repeat;
 }
 
 .tab-button.talent.active {
-  background: url("/assets/images/Talent btn.png") center/100% 100% no-repeat;
+  background: url("assets/images/Talent btn.png") center/100% 100% no-repeat;
 }
 
 .rounds-tab {
@@ -124,22 +124,22 @@ main,
 }
 
 .tab-button.round-1 {
-  background: url("/assets/images/Round 1 unselect btn.png") center/100% 100%
+  background: url("assets/images/Round 1 unselect btn.png") center/100% 100%
     no-repeat;
 }
 
 .tab-button.round-2 {
-  background: url("/assets/images/Round 2 unselect btn.png") center/100% 100%
+  background: url("assets/images/Round 2 unselect btn.png") center/100% 100%
     no-repeat;
 }
 
 .tab-button.round-1.active {
-  background: url("/assets/images/Round 1 select btn.png") center/100% 100%
+  background: url("assets/images/Round 1 select btn.png") center/100% 100%
     no-repeat;
 }
 
 .tab-button.round-2.active {
-  background: url("/assets/images/Round 2 select btn.png") center/100% 100%
+  background: url("assets/images/Round 2 select btn.png") center/100% 100%
     no-repeat;
 }
 
@@ -172,7 +172,7 @@ main,
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("/assets/images/Leaderboard and guide bg.png") center/100%
+  background: url("assets/images/Leaderboard and guide bg.png") center/100%
     100% no-repeat;
 }
 .leaderboard-container {
@@ -196,7 +196,7 @@ main,
   display: none;
   min-height: auto;
   height: 240px;
-  background: url("/assets/images/Rewards bg.png") center/100% 100% no-repeat;
+  background: url("assets/images/Rewards bg.png") center/100% 100% no-repeat;
   margin-bottom: 24px;
 }
 .reward-container.active {
@@ -218,7 +218,7 @@ main,
   --size: 90px;
   width: var(--size);
   height: calc(var(--size) + 10px);
-  background: url("/assets/images/Rewards base.png") center/100% 100% no-repeat;
+  background: url("assets/images/Rewards base.png") center/100% 100% no-repeat;
 }
 .slider-buttons {
   display: flex;
@@ -228,13 +228,13 @@ main,
 }
 .slider-button {
   --size: 10px;
-  background: url('/assets/images/unselect scroller.png') center/100% 100% no-repeat;
+  background: url('assets/images/unselect scroller.png') center/100% 100% no-repeat;
   height: var(--size);
   border-radius: var(--size);
   width: var(--size);
 }
 .slider-button.active {
-  background: url('/assets/images/Select scroller.png') center/100% 100% no-repeat;
+  background: url('assets/images/Select scroller.png') center/100% 100% no-repeat;
 }
 .reward-slides-container .info {
   font-style: normal;
@@ -259,7 +259,7 @@ main,
   width: 100%;
   height: 45px;
   margin-bottom: 10px;
-  background: url("/assets/images/Category btn bg.png") center/100% 100%
+  background: url("assets/images/Category btn bg.png") center/100% 100%
     no-repeat;
 }
 .category-tab-header {
@@ -272,15 +272,15 @@ main,
 }
 
 .tab-button.garba.active {
-  background: url("/assets/images/Garba fusion btn.png") center/100% 100%
+  background: url("assets/images/Garba fusion btn.png") center/100% 100%
     no-repeat;
 }
 .tab-button.singing.active {
-  background: url("/assets/images/Singing battle btn.png") center/100% 100%
+  background: url("assets/images/Singing battle btn.png") center/100% 100%
     no-repeat;
 }
 .tab-button.fashion.active {
-  background: url("/assets/images/fashion battle btn.png") center/100% 100%
+  background: url("assets/images/fashion battle btn.png") center/100% 100%
     no-repeat;
 }
 .schedule-tab .tab-content {
@@ -316,7 +316,7 @@ main,
   padding-inline: 20px;
   padding-block: 4px;
   justify-content: space-between;
-  background: url("/assets/images/Schedule table bg.png") center/100% 100%
+  background: url("assets/images/Schedule table bg.png") center/100% 100%
     no-repeat;
   font-size: 3vw;
 }
@@ -350,16 +350,16 @@ main,
   gap: 10px;
 }
 .topper-container .top-2 {
-  background: url("/assets/images/Top 2 bg.png") center/100% 100% no-repeat;
+  background: url("assets/images/Top 2 bg.png") center/100% 100% no-repeat;
   margin-top: 4%;
   order: 1;
 }
 .topper-container .top-1 {
-  background: url("/assets/images/Top 1 bg.png") center/100% 100% no-repeat;
+  background: url("assets/images/Top 1 bg.png") center/100% 100% no-repeat;
   order: 2;
 }
 .topper-container .top-3 {
-  background: url("/assets/images/Top 3 bg.png") center/100% 100% no-repeat;
+  background: url("assets/images/Top 3 bg.png") center/100% 100% no-repeat;
   margin-top: 8%;
   order: 3;
 }
@@ -402,7 +402,7 @@ main,
   align-items: center;
   padding-inline: 14px;
   padding-bottom: 10px;
-  background: url('/assets/images/4th name onwards strip.png') center/100% 100% no-repeat;
+  background: url('assets/images/4th name onwards strip.png') center/100% 100% no-repeat;
   gap: 1em;
 }
 .winner-strip .info {

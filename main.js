@@ -1,4 +1,3 @@
-import "./style.css";
 
 const tabs = document.querySelectorAll(".tab");
 tabs.forEach((tab) => {
